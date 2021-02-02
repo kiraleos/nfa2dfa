@@ -3,7 +3,7 @@ A non-deterministic finite automaton to deterministic finite automaton converter
 
 ## Usage
 `python main.py <input> <output>` 
-where `input` is a text file describing the nfa in the form:
+where `input` is a text file describing the NFA in the form:
 ```
 3      Number of states
 0 1    Alphabet
@@ -14,6 +14,7 @@ where `input` is a text file describing the nfa in the form:
 0 1 0
 1 1 2
 ```
+The output file is a DFA described in the same way as the input file. Some of the DFA's state's names are a concatenation of the NFA's state's names. For example, `01` is a valid DFA state name. 
 
 #### Disclaimer
 This was made in one day for a university course. Don't expect high quality code.
